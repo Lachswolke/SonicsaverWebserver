@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1e1; /* Soft beige */
+    color: #4a3c2c; /* Deep brown */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #3b3025; /* Darker brown */
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Containers */
+  .login-container, .welcome-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffe5c2; /* Light orange-beige */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Shared Button Styles */
+  button {
+    width: 45%;
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #a37b54; /* Warm brown */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8c6240; /* Slightly darker brown */
+  }
+  
+  /* Inputs */
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #c2a37b;
+    border-radius: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #a37b54;
+  }
+  
+/* Hedgehog Icon */
+.login-container::before,
+.welcome-container::before {
+    content: '';
+    background: url('./hedgehog.png') no-repeat center;
+    background-size: contain; /* Maintain aspect ratio */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+    border-radius: 50%;
+    border: 2px solid #a37b54;
+    background-color: #f4f1e1;
+}
+
+
+
+  
+  /* Login Page Specific Styles */
+  .login-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Welcome Page Specific Styles */
+  .welcome-container {
+    background-color: #ffedd5; /* Soft peach */
+  }
+  
+  .welcome-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-container button {
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  /* Footer (Optional) */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #6e5c47; /* Medium brown */
+  }
+  
